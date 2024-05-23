@@ -35,7 +35,9 @@
         "react-daterangepicker",
         "date-range",
         "date-range-picker",
-        "tailwind-daterange-picker"
+        "tailwind-daterange-picker",
+        "react-advance",
+        "react"
     ],
     "peerDependencies": {
         "dayjs": "^1.11.6",
