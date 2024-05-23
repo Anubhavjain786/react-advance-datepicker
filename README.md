@@ -4,7 +4,7 @@
     <a href="https://react-advance-datepicker-doc.vercel.app/" target="_blank">
       <img alt="React Advance Datepicker" width="100" style="border-radius: 100%;" src="https://raw.githubusercontent.com/Anubhavjain786/react-advance-datepicker/master/assets/img/calendar_logo.svg?raw=true">
     </a><br><br>
-    A modern date range picker component for React using Tailwind 3 and dayjs. Alternative to Litepie Datepicker which uses Vuejs.
+    A modern date range picker component for React using Tailwind 3 and dayjs.
 </p>
 
 <div align="center">
