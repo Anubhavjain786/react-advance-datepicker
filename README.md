@@ -1,7 +1,7 @@
 # React Advance Datepicker
 
 <p align="center">
-    <a href="https://react-advance-datepicker.vercel.app/" target="_blank">
+    <a href="https://react-advance-datepicker-doc.vercel.app/" target="_blank">
       <img alt="React Advance Datepicker" width="100" style="border-radius: 100%;" src="https://raw.githubusercontent.com/Anubhavjain786/react-advance-datepicker/master/assets/img/calendar_logo.svg?raw=true">
     </a><br><br>
     A modern date range picker component for React using Tailwind 3 and dayjs. Alternative to Litepie Datepicker which uses Vuejs.
@@ -40,7 +40,7 @@
 
 ## Documentation
 
-Go to [full documentation](https://react-tailwindcss-datepicker.vercel.app/)
+Go to [full documentation](https://react-advance-datepicker-doc.vercel.app/)
 
 ## Installation
 
@@ -128,12 +128,12 @@ export default App;
 **Teal themes example**
 ![Theme supported](https://raw.githubusercontent.com/Anubhavjain786/react-advance-datepicker/master/assets/img/Screen_Shot_2022-08-04_at_17.04.09_teal.png?raw=true)
 
-You can find the demo at [here](https://react-advance-datepicker.vercel.app/demo)
+You can find the demo at [here](https://react-advance-datepicker-doc.vercel.app/demo)
 
 > **Info**
 >
 > 👉 To discover the other possibilities offered by this library, you can consult the
-> [full documentation](https://react-advance-datepicker.vercel.app/).
+> [full documentation](https://react-advance-datepicker-doc.vercel.app/).
 
 ## PlayGround
 
@@ -157,7 +157,7 @@ See
 
 ## Official Documentation repo
 
-[https://github.com/Anubhavjain786/react-advance-datepicker-doc](https://github.com/Anubhavjain786/react-advance-datepicker-doc)
+[Documentation](https://react-advance-datepicker-doc.vercel.app/)
 
 ## Thanks to
 
