@@ -32,6 +32,7 @@ interface DatepickerStore {
     showFooter?: boolean;
     placeholder?: string | null;
     separator: string;
+    shortcutText: string | null;
     i18n: string;
     value: DateValueType;
     disabled?: boolean;
@@ -92,7 +93,8 @@ const DatepickerContext = createContext<DatepickerStore>({
     toggleIcon: undefined,
     classNames: undefined,
     popoverDirection: undefined,
-    separator: "~"
+    separator: "~",
+    shortcutText: null
 });
 
 export default DatepickerContext;

@@ -97,6 +97,7 @@ export default function Playground() {
                     asSingle={asSingle}
                     placeholder={placeholder}
                     separator={separator}
+                    shortcutText="Last 30 days"
                     startFrom={
                         startFrom.length && dayjs(startFrom).isValid() ? new Date(startFrom) : null
                     }

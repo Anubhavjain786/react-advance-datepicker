@@ -65,6 +65,7 @@ export interface DatepickerType {
     asSingle?: boolean;
     placeholder?: string;
     separator?: string;
+    shortcutText?: string;
     startFrom?: Date | null;
     i18n?: string;
     disabled?: boolean;

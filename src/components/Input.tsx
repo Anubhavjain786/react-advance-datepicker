@@ -27,6 +27,7 @@ const Input: React.FC<Props> = (e: Props) => {
         asSingle,
         placeholder,
         separator,
+        shortcutText,
         disabled,
         inputClassName,
         toggleClassName,
@@ -264,7 +265,6 @@ const Input: React.FC<Props> = (e: Props) => {
             }
         };
     }, [calendarContainer, arrowContainer, popoverDirection]);
-
     return (
         <>
             <input
@@ -278,7 +278,7 @@ const Input: React.FC<Props> = (e: Props) => {
                         ? placeholder
                         : `${displayFormat}${asSingle ? "" : ` ${separator} ${displayFormat}`}`
                 }
-                value={inputText}
+                value={shortcutText ? `${shortcutText} ${inputText}` : inputText}
                 id={inputId}
                 name={inputName}
                 autoComplete="off"
