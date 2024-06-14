@@ -43,6 +43,7 @@ const Input: React.FC<Props> = (e: Props) => {
     // UseRefs
     const buttonRef = useRef<HTMLButtonElement>(null);
     const inputRef = useRef<HTMLInputElement>(null);
+    const shortcutTextRef = useRef<HTMLInputElement>(null);
 
     // Functions
     const getClassName = useCallback(() => {
@@ -172,6 +173,7 @@ const Input: React.FC<Props> = (e: Props) => {
 
     useEffect(() => {
         const button = buttonRef?.current;
+        const shortcut = shortcutTextRef?.current;
 
         function focusInput(e: Event) {
             e.stopPropagation();
@@ -200,10 +202,16 @@ const Input: React.FC<Props> = (e: Props) => {
         if (button) {
             button.addEventListener("click", focusInput);
         }
+        if (shortcut) {
+            shortcut.addEventListener("click", focusInput);
+        }
 
         return () => {
             if (button) {
                 button.removeEventListener("click", focusInput);
+            }
+            if (shortcut) {
+                shortcut.removeEventListener("click", focusInput);
             }
         };
     }, [
@@ -278,14 +286,21 @@ const Input: React.FC<Props> = (e: Props) => {
                         ? placeholder
                         : `${displayFormat}${asSingle ? "" : ` ${separator} ${displayFormat}`}`
                 }
-                value={shortcutText ? `${shortcutText} ${inputText}` : inputText}
+                value={inputText}
                 id={inputId}
                 name={inputName}
                 autoComplete="off"
                 role="presentation"
                 onChange={handleInputChange}
                 onKeyDown={handleInputKeyDown}
+                style={{ paddingLeft: `${shortcutTextRef.current?.clientWidth}px` }}
             />
+            <span
+                ref={shortcutTextRef}
+                className="absolute left-0 h-full px-3 text-gray-600 focus:outline-none disabled:opacity-40 disabled:cursor-not-allowed align-middle py-2 font-medium cursor-text"
+            >
+                {shortcutText}
+            </span>
 
             <button
                 type="button"
