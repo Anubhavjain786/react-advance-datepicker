@@ -66,6 +66,7 @@ const Datepicker: React.FC<DatepickerType> = ({
     useOnClickOutside(containerRef, () => {
         const container = containerRef.current;
         if (container) {
+            onChange({ endDate: null, startDate: null, ...value });
             hideDatepicker();
         }
     });
