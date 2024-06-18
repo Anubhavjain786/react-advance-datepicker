@@ -65,8 +65,12 @@ const Datepicker: React.FC<DatepickerType> = ({
     // Custom Hooks use
     useOnClickOutside(containerRef, () => {
         const container = containerRef.current;
+        const div = calendarContainerRef.current;
+        const arrow = arrowRef.current;
         if (container) {
-            onChange({ endDate: null, startDate: null, ...value });
+            if (arrow && div && div.classList.contains("block")) {
+                onChange({ endDate: null, startDate: null, ...value });
+            }
             hideDatepicker();
         }
     });
